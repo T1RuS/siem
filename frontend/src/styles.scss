@@ -1,0 +1,82 @@
+body {
+  background: #eee;
+  font-family: 'Sofia Pro Light', Lato, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.App {
+  height: 80vh;
+  padding:0;
+  margin: 0 auto;
+  width: 50%;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px #ddd;
+  margin: 1rem 0 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+ 
+  li {
+   a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+
+     &:hover,
+     &:focus,
+     &:active {
+       color: #22f;
+       font-weight: bold;
+       background: #eef;
+     }
+
+     &.active-link{
+       color: red;
+       font-weight: bold;
+     }
+   }
+  }
+}
+
+.user-profile {
+  margin-left: 1rem;
+  font-weight: bolder;
+}
+
+.login-btns  {
+  display: flex;
+  flex-direction: column;
+  button {
+    margin-top: 0.5rem;
+  }
+}
+
+button {
+  border: solid 1px #aaf;
+  cursor: pointer;
+  font-family: 'Sofia Pro Light', Lato, sans-serif;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius:  0.25rem;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #22f;
+    font-weight: bold;
+    background: #eef;
+  }
+
+  &.signout {
+    padding: 0.15rem 1rem;
+    margin-left: 2rem;
+  }
+}
